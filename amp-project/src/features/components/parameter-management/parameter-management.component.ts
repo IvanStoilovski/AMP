@@ -3,14 +3,14 @@ import { AmpCardComponent } from "../../../shared/card-component/amp-card.compon
 import { Router } from '@angular/router';
 
 @Component({
-    selector: 'amp-welcome',
-    templateUrl: './welcome.component.html',
-    styleUrl: './welcome.component.css',
+    selector: 'parameter-management',
+    templateUrl: './parameter-management.component.html',
+    styleUrl: './parameter-management.component.css',
     standalone: true,
     imports: [AmpCardComponent]
 })
 
-export class WelcomeComponent{
+export class ParameterManagementComponent{
     constructor(private router: Router) { }
 
     welcomeMessage = 'Welcome User!';
@@ -20,6 +20,6 @@ export class WelcomeComponent{
     }
     
     public navigateToParams(){
-        this.router.navigate(['/manage']);
+        this.router.navigate(['/']);
     }
 }

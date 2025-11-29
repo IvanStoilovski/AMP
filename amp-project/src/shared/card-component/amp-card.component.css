@@ -1,0 +1,8 @@
+.card {
+  width: 100%;
+}
+
+button[tuiCardLarge] {
+  width: 100%;
+  display: block;
+}

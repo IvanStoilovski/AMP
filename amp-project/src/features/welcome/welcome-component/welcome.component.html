@@ -1,1 +1,16 @@
-<h1>{{welcomeMessage}}</h1>
+<div class="container">
+    <div class="welcome-message">
+         <h1>{{welcomeMessage}}</h1>
+    </div>
+    <div class="content">
+        <amp-card
+        title='Generate placement diagram'
+        subtitle='Click here to generate the placement diagram'
+        (cardClicked)="navigateToGenerator()"></amp-card>
+        <amp-card
+        title='Manage parameters'
+        subtitle='Click here to manage parameters of Articles, Article groups, and Hangers'
+        (cardClicked)="navigateToParams()"
+        ></amp-card>
+    </div>
+</div>

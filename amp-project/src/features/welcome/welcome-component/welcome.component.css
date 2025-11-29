@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+}
+
+.welcome-message{
+  padding: 20px 0px;
+}
+
+.content {
+  display: flex;
+  gap: 50px;
+  width: 100%;
+}
+
+.content > * {
+  flex: 1;
+}
