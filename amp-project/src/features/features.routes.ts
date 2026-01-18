@@ -17,6 +17,11 @@ export const featuresRoutes: Routes = [
       import('./components/parameter-management/parameter-management.component').then(m => m.ParameterManagementComponent)
   },
   {
+    path: 'articles',
+    loadComponent: () => 
+      import('./components/article/list-articles/list-articles.component').then(m=> m.ListArticlesComponent)
+  },
+  {
     path: 'article/:id',
     loadComponent: () =>
       import('./components/article/view-article/view-article.component')

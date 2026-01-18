@@ -1,3 +1,16 @@
 .container {
   width: 100%;
 }
+
+.management-choice {
+  display: flex;
+  width: 80%;
+  margin: 10rem auto;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.management-choice amp-card {
+  flex: 1;
+}
+

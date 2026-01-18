@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: space-between;
   padding: 10px 40px;
-  /*background-color: #f30808;*/
   .content{
     display: flex;
 
@@ -11,13 +10,14 @@
       font-size: xx-large;
       font-weight: 700;
       color: #555;
+      cursor: pointer;
     }
   }
 }
 
 .main{
   padding: 10px 40px;
-  min-height: 89vh;
+  min-height: 85vh;
 }
 
 footer {

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
 import { TuiRoot } from '@taiga-ui/core' 
 @Component({
   selector: 'app-root',
@@ -8,5 +8,10 @@ import { TuiRoot } from '@taiga-ui/core'
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  constructor(private router: Router) { }
   title = 'AMP-project';
+
+  public navigateToHome(){
+    this.router.navigate(['/']);
+  }
 }

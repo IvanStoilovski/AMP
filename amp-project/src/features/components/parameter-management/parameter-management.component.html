@@ -1,5 +1,22 @@
 <div class="container">
-    <div>
-        <h1>AAAAAAAAAAAAAAA</h1>
+    <div class="title">
+        <h1>Choose which parameters you would like to manage</h1>
+    </div>
+    <div class="management-choice">
+    <amp-card class="manage-articles"
+       title='Manage articles'
+       subtitle='Click here to manage amp articles'
+       (cardClicked)="navigateToArticleManagement()">
+    </amp-card>
+    <amp-card class="manage-groups"
+       title='Manage groups'
+       subtitle='Click here to manage amp groups'
+       (cardClicked)="navigateToGroupsManagement()">
+    </amp-card>
+    <amp-card class="manage-hangers"
+       title='Manage hangers'
+       subtitle='Click here to manage amp hangers'
+       (cardClicked)="navigateHangersManagement()">
+    </amp-card>
     </div>
 </div>

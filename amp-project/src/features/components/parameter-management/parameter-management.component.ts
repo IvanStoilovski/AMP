@@ -15,11 +15,15 @@ export class ParameterManagementComponent{
 
     welcomeMessage = 'Welcome User!';
 
-    public navigateToGenerator(){
-        this.router.navigate(['/generate']);
+    public navigateToArticleManagement(){
+        this.router.navigate(['/articles']);
     }
     
-    public navigateToParams(){
+    public navigateToGroupsManagement(){
+        this.router.navigate(['/']);
+    }
+
+    public navigateHangersManagement(){
         this.router.navigate(['/']);
     }
 }

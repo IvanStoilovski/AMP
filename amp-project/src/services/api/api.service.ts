@@ -3,10 +3,10 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root' //Making it a singleton
+  providedIn: 'root'
 })
 export class UserService {
-  private apiUrl = 'to be implemented'; // Example API URL
+  private apiUrl = 'to be implemented';
 
   constructor(private http: HttpClient) {}
     

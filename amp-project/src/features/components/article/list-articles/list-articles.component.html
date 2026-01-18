@@ -1,0 +1,37 @@
+<h2>{{ title }}</h2>
+
+<div class="table-container">
+    	<tui-scrollbar>
+    <cdk-virtual-scroll-viewport
+        #viewport
+        appendOnly
+        tuiScrollable
+        class="viewport tui-zero-scrollbar"
+        [itemSize]="45"
+        [maxBufferPx]="500"
+        [minBufferPx]="400"
+    >
+  <table tuiTable [columns]="columns" class="table">
+    <thead tuiThead>
+      <tr tuiThGroup>
+        <ng-container *ngFor="let col of columnsDef">
+          <th *tuiHead="col.property" tuiTh>{{ col.title }}</th>
+        </ng-container>
+      </tr>
+    </thead>
+
+    <tbody tuiTbody [data]="articles">
+      <tr *ngFor="let article of articles" tuiTr>
+        <td *tuiCell="'id'" tuiTd>{{ article.id }}</td>
+        <td *tuiCell="'articleNumber'" tuiTd>{{ article.articleNumber }}</td>
+        <td *tuiCell="'articleGroup.articleGroupType'" tuiTd>{{ article.articleGroup.articleGroupType }}</td>
+        <td *tuiCell="'hangerType.name'" tuiTd>{{ article.hangerType.name }}</td>
+        <td *tuiCell="'hangerType.segmentParameters.length'" tuiTd>{{ article.hangerType.segmentParameters.length }}</td>
+        <td *tuiCell="'numberOfVerticalAttachmentPoints'" tuiTd>{{ article.numberOfVerticalAttachmentPoints }}</td>
+      </tr>
+    </tbody>
+  </table>
+  	    </cdk-virtual-scroll-viewport>
+</tui-scrollbar>
+</div>
+
